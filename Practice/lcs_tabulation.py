@@ -8,7 +8,7 @@ Approach:
 4. uses 2D- array for DP
 5. fill column 0 and row 0 with all 0's why because there is absolutely no match (empty str)
 6. if characters match, fill 1 + diagonal value
-7. if not fill with max(top, left)
+7. if not, fill with max(top, left)
 """
 
 st1 = "abc"
