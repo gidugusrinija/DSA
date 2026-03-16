@@ -48,7 +48,7 @@ def min_ops_memo(st1, st2):
         # base case
 
         if i == 0:
-            # need to j elements
+            # need to insert j elements
             return j
         if j == 0:
             # need to delete i elements
