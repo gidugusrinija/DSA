@@ -68,5 +68,19 @@ def removeDuplicates(nums) -> int:
     return unique_pointer + 1
 
 
+arr = [1, 1, 2, 2, 3, 3, 4]
+
+i = 0
+
+for j in range(1, len(arr)):
+    if arr[i] != arr[j]:
+        i += 1
+        arr[i] = arr[j]
+
+del arr[i+1:]
+
+print(arr)
+
+
 nums, nums_l = removeDuplicates([1,1,2])
 print(nums, nums_l)  # [1,2], 2
